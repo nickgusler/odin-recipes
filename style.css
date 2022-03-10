@@ -1,0 +1,34 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(214, 52, 52);
+}
+
+.recipe-list {
+    display: grid; 
+    grid-auto-flow: column; 
+    grid-auto-columns: (minmax(10px, auto)); 
+    grid-auto-rows: auto; 
+    gap: 5px 5px; 
+    justify-items: center; 
+}
+
+.recipe {
+    position: relative;
+}
+
+.image {
+    width: 350px;
+    height: 350px;
+    border: 5px solid #555;
+}
+
+.name {
+    position: absolute;
+    right: 10px;
+    color: black;
+    font-size: 24px;
+}
