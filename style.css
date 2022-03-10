@@ -4,31 +4,36 @@
 
 h1 {
     text-align: center;
-    color: rgb(214, 52, 52);
+    color: #463434;
 }
 
 .recipe-list {
-    display: grid; 
-    grid-auto-flow: column; 
-    grid-auto-columns: (minmax(10px, auto)); 
-    grid-auto-rows: auto; 
-    gap: 5px 5px; 
-    justify-items: center; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 10px;
 }
 
 .recipe {
     position: relative;
+    flex: auto;
+    flex-basis: auto;
+    position: relative;
+    margin-bottom: 5%;
 }
 
 .image {
     width: 350px;
     height: 350px;
-    border: 5px solid #555;
+    border: 3px solid #555;
+    box-shadow: 10px 10px #805f5f;
 }
 
 .name {
     position: absolute;
-    right: 10px;
-    color: black;
+    left: 20px;
+    top: 17px;
+    color: #ffffff;
     font-size: 24px;
+    font-weight: bold;
 }
